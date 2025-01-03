@@ -1,1 +1,37 @@
+name: Fetch API Data
 
+on:
+  schedule:
+    - cron: '0 0 * * *' # Exécute chaque jour à minuit
+  workflow_dispatch:
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch data from IGDB API
+        run: |
+          # Obtenir le token d'accès
+          response=$(curl -s -X POST "https://id.twitch.tv/oauth2/token" -d "client_id=${{ secrets.IGDB_CLIENT_ID }}" -d "client_secret=${{ secrets.IGDB_CLIENT_SECRET }}" -d "grant_type=client_credentials")
+          access_token=$(echo $response | jq -r .access_token)
+
+          # Récupérer les données depuis l'API IGDB
+          curl -s -X POST "https://api.igdb.com/v4/games" \
+          -H "Client-ID: ${{ secrets.IGDB_CLIENT_ID }}" \
+          -H "Authorization: Bearer $access_token" \
+          -H "Content-Type: application/json" \
+          -d 'fields name,cover.url,first_release_date,summary,involved_companies.company.name,platforms.name,url; sort popularity desc; limit 10;' -o data.json
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -m "Update data.json"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
