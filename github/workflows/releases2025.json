@@ -1,4 +1,4 @@
-local mostAnticipatedGames2025 = {
+[
     "Grand Theft Auto VI",
     "Death Stranding 2: On The Beach",
     "Doom: The Dark Ages",
@@ -69,4 +69,5 @@ local mostAnticipatedGames2025 = {
     "Bloodborne 2",
     "Left 4 Dead 3",
     "Diablo 5"
+]
 }
