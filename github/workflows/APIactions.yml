@@ -15,10 +15,11 @@ jobs:
 
       - name: Fetch esports data
         run: |
-          # Télécharger le fichier JSON depuis GitHub
+          # Télécharger les fichiers JSON depuis GitHub
           wget https://raw.githubusercontent.com/tiggy1er/apkgames/main/esports.json -O esports.json
+          wget https://raw.githubusercontent.com/tiggy1er/apkgames/main/releases2025.json -O releases2025.json
 
-          # Générer le contenu du fichier Lua
+          # Générer le contenu du fichier Lua pour esports.json
           echo 'local composer = require("composer")' > esports.lua
           echo 'local widget = require("widget")' >> esports.lua
           echo 'local json = require("json")' >> esports.lua
@@ -34,12 +35,29 @@ jobs:
           cat esports.json | jq -c . >> esports.lua
           echo 'return SPORTS_GAMES' >> esports.lua
 
+          # Générer le contenu du fichier Lua pour releases2025.json
+          echo 'local composer = require("composer")' > releases2025.lua
+          echo 'local widget = require("widget")' >> releases2025.lua
+          echo 'local json = require("json")' >> releases2025.lua
+          echo 'local network = require("network")' >> releases2025.lua
+          echo 'local theme = require("theme.colors")' >> releases2025.lua
+          echo 'local native = require("native")' >> releases2025.lua
+          echo 'local COLORS = require("theme.colors")' >> releases2025.lua
+          echo '-- Add required Corona SDK globals' >> releases2025.lua
+          echo 'local display = require("display")' >> releases2025.lua
+          echo 'local system = require("system")' >> releases2025.lua
+          echo 'local timer = require("timer")' >> releases2025.lua
+          echo 'local RELEASES_GAMES = ' >> releases2025.lua
+          cat releases2025.json | jq -c . >> releases2025.lua
+          echo 'return RELEASES_GAMES' >> releases2025.lua
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add esports.lua
-          git commit -m "Update esports.lua"
+          git add releases2025.lua
+          git commit -m "Update esports.lua and releases2025.lua"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
