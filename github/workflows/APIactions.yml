@@ -30,9 +30,21 @@ jobs:
           -d 'fields name,cover.url,first_release_date,summary,involved_companies.company.name,platforms.name,url; sort popularity desc; limit 10;' \
           -o data.json
 
-          # Convertir JSON en Lua table
-          echo 'return ' > esports.lua
+          # Générer le contenu du fichier Lua
+          echo 'local composer = require("composer")' > esports.lua
+          echo 'local widget = require("widget")' >> esports.lua
+          echo 'local json = require("json")' >> esports.lua
+          echo 'local network = require("network")' >> esports.lua
+          echo 'local theme = require("theme.colors")' >> esports.lua
+          echo 'local native = require("native")' >> esports.lua
+          echo 'local COLORS = require("theme.colors")' >> esports.lua
+          echo '-- Add required Corona SDK globals' >> esports.lua
+          echo 'local display = require("display")' >> esports.lua
+          echo 'local system = require("system")' >> esports.lua
+          echo 'local timer = require("timer")' >> esports.lua
+          echo 'local sports_games = ' >> esports.lua
           cat data.json | jq -c . >> esports.lua
+          echo 'return sports_games' >> esports.lua
 
       - name: Commit and push changes
         run: |
