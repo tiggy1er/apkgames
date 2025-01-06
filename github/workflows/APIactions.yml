@@ -19,7 +19,7 @@ jobs:
         run: |
           # Télécharger les fichiers JSON depuis les URLs spécifiées
           wget https://developerit.tnt/path/to/esports.json -O esports.json
-          wget https://raw.githubusercontent.com/tigerroad1/eventsgames/main/Sorties2025 -O releases2025.json
+          wget https://raw.githubusercontent.com/tigerroad1/eventsgames/refs/heads/main/Sorties2025 -O releases2025.json
 
           # Générer le contenu du fichier Lua pour esports.json
           echo 'local composer = require("composer")' > esports.lua
