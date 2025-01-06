@@ -1,156 +1,26 @@
 esports_data:
   - title: "EA Sports FC 24"
-    description: "Le dernier opus de la célèbre franchise de football."
+    description: "Un jeu de football réaliste et immersif."
     developer: "EA Sports"
     platforms: ["PC", "PS5", "Xbox Series X/S"]
     releaseDate: "2024"
   - title: "NBA 2K24"
-    description: "Simulation de basketball avec des graphismes réalistes."
+    description: "Le jeu ultime de basketball avec des graphismes incroyables."
     developer: "Visual Concepts"
     platforms: ["PC", "PS5", "Xbox Series X/S"]
     releaseDate: "2024"
   - title: "Madden NFL 24"
-    description: "La référence des simulations de football américain."
+    description: "Simulation de football américain fidèle et excitante."
     developer: "EA Sports"
     platforms: ["PC", "PS5", "Xbox Series X/S"]
     releaseDate: "2024"
   - title: "WWE 2K24"
-    description: "Entrez sur le ring avec des combats spectaculaires."
+    description: "Participez aux combats de catch spectaculaires."
     developer: "Visual Concepts"
     platforms: ["PC", "PS5", "Xbox Series X/S"]
     releaseDate: "2024"
   - title: "F1 Manager 2023"
-    description: "Prenez les rênes d'une équipe de Formule 1."
+    description: "Prenez les commandes d'une équipe de Formule 1."
     developer: "Frontier Developments"
     platforms: ["PC", "PS5", "Xbox Series X/S"]
     releaseDate: "2023"
-  - title: "NHL 24"
-    description: "Simulation de hockey sur glace avec des compétitions intenses."
-    developer: "EA Sports"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2024"
-  - title: "PGA Tour 2K23"
-    description: "Simulation de golf avec les meilleurs parcours mondiaux."
-    developer: "HB Studios"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2023"
-  - title: "MLB The Show 24"
-    description: "Simulation de baseball avec des graphismes réalistes."
-    developer: "San Diego Studio"
-    platforms: ["PS5", "Xbox Series X/S"]
-    releaseDate: "2024"
-  - title: "eFootball 2024"
-    description: "Jeu de football gratuit avec mises à jour régulières."
-    developer: "Konami"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2024"
-  - title: "Football Manager 2024"
-    description: "Prenez les commandes d'un club et menez-le à la victoire."
-    developer: "Sports Interactive"
-    platforms: ["PC"]
-    releaseDate: "2024"
-  - title: "Riders Republic"
-    description: "Un monde ouvert pour les sports extrêmes."
-    developer: "Ubisoft"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2023"
-  - title: "MotoGP 23"
-    description: "La simulation officielle de la MotoGP."
-    developer: "Milestone"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2023"
-  - title: "UFC 5"
-    description: "Simulation de combat en MMA."
-    developer: "EA Sports"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2024"
-  - title: "FIFA Street: Legacy Edition"
-    description: "Football de rue avec un gameplay arcade."
-    developer: "EA Sports"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2024"
-  - title: "Tennis World Tour 3"
-    description: "Simulation de tennis réaliste."
-    developer: "Big Ant Studios"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2024"
-  - title: "Tony Hawk's Pro Skater 3+4 Remastered"
-    description: "Remaster des jeux emblématiques de skateboard."
-    developer: "Vicarious Visions"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2024"
-  - title: "Forza Motorsport 8"
-    description: "Simulation de course automobile ultra-réaliste."
-    developer: "Turn 10 Studios"
-    platforms: ["PC", "Xbox Series X/S"]
-    releaseDate: "2024"
-  - title: "Trackmania+ 2024"
-    description: "Courses rapides avec des circuits personnalisables."
-    developer: "Nadeo"
-    platforms: ["PC"]
-    releaseDate: "2024"
-  - title: "Skate 4"
-    description: "Un retour aux sources pour les fans de skateboard."
-    developer: "Full Circle"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2024"
-  - title: "Grid Legends: Sports Edition"
-    description: "Courses automobiles avec une narration immersive."
-    developer: "Codemasters"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2024"
-  - title: "NBA 2K25"
-    description: "Simulation de basketball avec de nouvelles fonctionnalités."
-    developer: "Visual Concepts"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2025"
-  - title: "EA Sports FC 25"
-    description: "Le prochain chapitre de la franchise de football."
-    developer: "EA Sports"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2025"
-  - title: "Madden NFL 25"
-    description: "Le prochain opus de la série de football américain."
-    developer: "EA Sports"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2025"
-  - title: "FIFA 25"
-    description: "Football de haut niveau avec des graphismes améliorés."
-    developer: "EA Sports"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2025"
-  - title: "Forza Horizon 6"
-    description: "Explorez un monde ouvert et participez à des courses épiques."
-    developer: "Playground Games"
-    platforms: ["PC", "Xbox Series X/S"]
-    releaseDate: "2025"
-  - title: "Cricket 25"
-    description: "Simulation réaliste de cricket."
-    developer: "Big Ant Studios"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2025"
-  - title: "Formula 1 2025"
-    description: "Le dernier opus de la série officielle de F1."
-    developer: "Codemasters"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2025"
-  - title: "Pro Cycling Manager 2025"
-    description: "Gérez une équipe cycliste et remportez les grandes courses."
-    developer: "Cyanide Studio"
-    platforms: ["PC"]
-    releaseDate: "2025"
-  - title: "WWE 2K25"
-    description: "Combattez avec les superstars de la WWE."
-    developer: "Visual Concepts"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2025"
-  - title: "eFootball 2025"
-    description: "Un jeu de football gratuit et évolutif."
-    developer: "Konami"
-    platforms: ["PC", "PS5", "Xbox Series X/S"]
-    releaseDate: "2025"
-  - title: "Football Manager 2025"
-    description: "Prenez les commandes d'un club de football et gérez chaque détail."
-    developer: "Sports Interactive"
-    platforms: ["PC"]
-    releaseDate: "2025"
