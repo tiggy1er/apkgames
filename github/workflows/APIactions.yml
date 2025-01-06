@@ -10,14 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Étape 1: Vérifier le dépôt
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      # Étape 2: Télécharger les données depuis les URLs
       - name: Fetch esports data
         run: |
-          # Télécharger les fichiers JSON depuis developerit.tnt
+          # Télécharger les fichiers JSON depuis les URLs spécifiées
           wget https://developerit.tnt/path/to/esports.json -O esports.json
-          wget https://developerit.tnt/path/to/releases2025.json -O releases2025.json
+          wget https://raw.githubusercontent.com/tigerroad1/eventsgames/main/Sorties2025 -O releases2025.json
 
           # Générer le contenu du fichier Lua pour esports.json
           echo 'local composer = require("composer")' > esports.lua
@@ -51,12 +53,12 @@ jobs:
           cat releases2025.json | jq -c . >> releases2025.lua
           echo 'return RELEASES_GAMES' >> releases2025.lua
 
+      # Étape 3: Commiter et pousser les changements
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add esports.lua
-          git add releases2025.lua
+          git add esports.lua releases2025.lua
           git commit -m "Update esports.lua and releases2025.lua"
           git push
         env:
