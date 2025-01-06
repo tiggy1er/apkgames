@@ -1,26 +1,80 @@
 esports_data:
   - title: "EA Sports FC 24"
-    description: "Un jeu de football réaliste et immersif."
+    description: "Simulation réaliste de football."
     developer: "EA Sports"
+    developer_url: "https://www.ea.com/fr-fr"
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x3d.jpg"
     platforms: ["PC", "PS5", "Xbox Series X/S"]
     releaseDate: "2024"
+
   - title: "NBA 2K24"
-    description: "Le jeu ultime de basketball avec des graphismes incroyables."
+    description: "Jeu de basketball immersif."
     developer: "Visual Concepts"
+    developer_url: "https://www.2k.com/games/nba-2k/"
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2yz0.jpg"
     platforms: ["PC", "PS5", "Xbox Series X/S"]
     releaseDate: "2024"
+
   - title: "Madden NFL 24"
-    description: "Simulation de football américain fidèle et excitante."
-    developer: "EA Sports"
+    description: "Simulation de football américain."
+    developer: "EA Tiburon"
+    developer_url: "https://www.ea.com/fr-fr/games/madden-nfl"
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3a1z.jpg"
     platforms: ["PC", "PS5", "Xbox Series X/S"]
     releaseDate: "2024"
+
   - title: "WWE 2K24"
-    description: "Participez aux combats de catch spectaculaires."
+    description: "Jeu de catch divertissant."
     developer: "Visual Concepts"
+    developer_url: "https://wwe.2k.com/"
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4ba5.jpg"
     platforms: ["PC", "PS5", "Xbox Series X/S"]
     releaseDate: "2024"
+
   - title: "F1 Manager 2023"
-    description: "Prenez les commandes d'une équipe de Formule 1."
+    description: "Prenez les commandes d'une écurie de F1."
     developer: "Frontier Developments"
+    developer_url: "https://www.frontier.co.uk/games/f1-manager-2023"
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co5xc4.jpg"
     platforms: ["PC", "PS5", "Xbox Series X/S"]
     releaseDate: "2023"
+
+  - title: "NHL 24"
+    description: "Simulation de hockey sur glace."
+    developer: "EA Vancouver"
+    developer_url: "https://www.ea.com/fr-fr/games/nhl"
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co6yr7.jpg"
+    platforms: ["PC", "PS5", "Xbox Series X/S"]
+    releaseDate: "2024"
+
+  - title: "PGA Tour 2K23"
+    description: "Jeu de golf professionnel."
+    developer: "HB Studios"
+    developer_url: "https://www.hb-studios.com/"
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co7bt8.jpg"
+    platforms: ["PC", "PS5", "Xbox Series X/S"]
+    releaseDate: "2023"
+
+  - title: "MLB The Show 24"
+    description: "Jeu de baseball authentique."
+    developer: "San Diego Studio"
+    developer_url: "https://www.sdsu.edu/"
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co8gt9.jpg"
+    platforms: ["PS5", "Xbox Series X/S"]
+    releaseDate: "2024"
+
+  - title: "eFootball 2024"
+    description: "Football gratuit et compétitif."
+    developer: "Konami"
+    developer_url: "https://www.konami.com/games/efootball/"
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co9jr0.jpg"
+    platforms: ["PC", "PS5", "Xbox Series X/S"]
+    releaseDate: "2024"
+
+  - title: "Football Manager 2024"
+    description: "Prenez les rênes d'une équipe de football."
+    developer: "Sports Interactive"
+    developer_url: "https://www.sigames.com/"
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co10jr.jpg"
+    platforms: ["PC", "Mac"]
+    releaseDate: "2024"
