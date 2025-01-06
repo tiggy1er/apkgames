@@ -19,7 +19,7 @@ jobs:
         run: |
           # Télécharger les fichiers JSON depuis les URLs spécifiées
           wget https://developerit.tnt/path/to/esports.json -O esports.json
-          wget https://raw.githubusercontent.com/tiggy1er/apkgames/refs/heads/main/github/workflows/releases2025.json
+          wget https://raw.githubusercontent.com/tiggy1er/apkgames/refs/heads/main/github/workflows/releases2025.json -O releases2025.json
 
           # Générer le contenu du fichier Lua pour esports.json
           echo 'local composer = require("composer")' > esports.lua
